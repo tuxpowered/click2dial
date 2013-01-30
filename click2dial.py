@@ -17,6 +17,11 @@ DESCRIPTION
 EXAMPLES
 
     click2dial.py --destination=5555551212 --internal=1000
+    
+    --destination=5551212   The number you wish to dial.
+    --internal=1000         Your extension number.
+    --user=asterisk         The user Asterisk PBX is running under.
+    --accountcode=TESTING   The accountcode for asterisk CDR.
 
 EXIT STATUS
 
@@ -24,7 +29,7 @@ EXIT STATUS
 
 AUTHOR
 
-    Ben DAVIS <ben@sjobeck.com>
+    Ben <ben@voice1 dot me>
 
 LICENSE
 
