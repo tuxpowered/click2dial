@@ -80,9 +80,9 @@ def mkCallFile(number2dial=None, extension=None, **kwargs):
 
     # Removes all non alpha chars from the number2dial
 
-    vars = {'num2dial':number2dial,'accountcode':'TESTING'}
-    call = pycall.Call('IAX2/osdorp/%s' %(extension.strip()),
-                       variables=vars,
+    channel_vars = {'num2dial':number2dial,'accountcode':'TESTING'}
+    call = pycall.Call('SIP/flowroute/%s' %(extension.strip()),
+                       variables=channel_vars,
                        account='TESTING',
                        callerid='Testing <%s000000>' %(extension))
     # We want to send this call to an existing context in asterisk
